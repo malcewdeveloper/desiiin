@@ -1,0 +1,17 @@
+@import 'normalize.css';
+@import './manrope.css';
+
+:root {
+    --orange-color: #FC6321;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Manrope Medium'
+}
+

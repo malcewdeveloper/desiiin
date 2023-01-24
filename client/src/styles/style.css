@@ -10,8 +10,17 @@
 }
 
 body {
+    color: #28292C;
     margin: 0;
     font-size: 14px;
     font-family: 'Manrope Medium'
 }
 
+.button {
+    margin: 0;
+    padding: 18px 36px!important;
+}
+
+.button_orange {
+    background-color: var(--orange-color);
+}

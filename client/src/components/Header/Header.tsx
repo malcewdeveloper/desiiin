@@ -32,7 +32,7 @@ function Header() {
     return (
         <AppBar
         sx={{
-            bgcolor: 'transparent',
+            bgcolor: '#fff',
             boxShadow: 'none'
         }}>
             <Container maxWidth='xl'>
@@ -80,9 +80,13 @@ function Header() {
                                     <Link 
                                     href='#' 
                                     underline='none' 
-                                    color={'black'}
+                                    color='black'
                                     sx={{
-                                        whiteSpace: 'nowrap'
+                                        whiteSpace: 'nowrap',
+                                        transition: '0.1s linear',
+                                        ':hover': {
+                                            color: '#FC6321'
+                                        }
                                     }}>
                                         { item } 
                                     </Link>
@@ -90,14 +94,20 @@ function Header() {
                             ))}
                         </List>
                     </Box>
-                    <Typography sx={{ 
-                        color: '#FC6321',
-                        flex: '1',
-                        fontSize: '14px',
-                        textAlign: 'end'
+                    <Box sx={{
+                        textAlign: 'end',
+                        flex: '1'  
                     }}>
-                        Вход / Регистрация
-                    </Typography>
+                        <Link
+                        href='#'
+                        underline='hover'
+                        sx={{
+                            color: '#FC6321',
+                            fontSize: '14px',
+                        }}>
+                            Вход / Регистрация
+                        </Link>
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>
